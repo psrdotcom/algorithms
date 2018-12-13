@@ -1,4 +1,4 @@
-package pillisureshraju;
+package in.pillisureshraju.algorithms;
 
 import org.junit.Test;
 
