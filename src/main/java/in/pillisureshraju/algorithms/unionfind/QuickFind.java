@@ -50,6 +50,26 @@ public class QuickFind {
   }
 
   /**
+   * Perform the quickfind action
+   * 
+   * @param edges the two dimensional input of array
+   */
+  public void perform(int edges[][]) {
+    System.out.println("Initial graph:\n" + this.toString());
+    for (int[] i : edges) {
+      int p = i[0];
+      int q = i[1];
+      if (!(this.isConnected(p, q))) {
+        System.out.println("\nCreate edge for " + p + " and " + q);
+        this.union(p, q);
+        System.out.println(this.toString());
+      }
+    }
+
+    System.out.println("\nFinal graph with connected nodes:\n" + this.toString());
+  }
+
+  /**
    * Converts the array to string using Arrays utility
    * 
    * @return the array as string with comma delimeted
