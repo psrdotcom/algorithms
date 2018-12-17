@@ -2,6 +2,7 @@ package in.pillisureshraju.algorithms;
 
 import in.pillisureshraju.algorithms.unionfind.QuickFind;
 import in.pillisureshraju.algorithms.unionfind.QuickUnion;
+import in.pillisureshraju.algorithms.unionfind.WeightedQuickUnion;
 
 /**
  * App class
@@ -24,5 +25,8 @@ public final class App {
 
         QuickUnion qu = new QuickUnion(N);
         qu.perform(edges);
+
+        WeightedQuickUnion wqu = new WeightedQuickUnion(N);
+        wqu.perform(edges);
     }
 }
