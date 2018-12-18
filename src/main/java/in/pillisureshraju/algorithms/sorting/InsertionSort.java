@@ -3,7 +3,7 @@ package in.pillisureshraju.algorithms.sorting;
 /**
  * @author Suresh Raju Pilli
  * 
- *         Insertion Sort Sort one item at a time, by moving it the sorted list
+ *         Insertion Sort sorts one item at a time, by moving it the sorted list
  *         with in the array. Starts with first two elements comparision and
  *         swap the elements if right element is smaller. Compare and swap
  *         continues till the smallest element reaches its exact position.
