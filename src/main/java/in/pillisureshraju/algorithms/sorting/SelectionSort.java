@@ -37,10 +37,12 @@ class SelectionSort {
    * @param pos1 the first index position of array
    * @param pos2 the second index position of array
    */
-  private static void swapValues(int arr[], int pos1, int pos2) {
-    int temp = 0;
-    temp = arr[pos1];
-    arr[pos1] = arr[pos2];
-    arr[pos2] = temp;
+  private static void swapValues(int a[], int pos1, int pos2) {
+    if (a[pos1] != a[pos2]) {
+      int temp = 0;
+      temp = a[pos1];
+      a[pos1] = a[pos2];
+      a[pos2] = temp;
+    }
   }
 }

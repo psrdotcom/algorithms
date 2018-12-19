@@ -40,9 +40,11 @@ class BubbleSort {
    * @param pos2 the second index position of array
    */
   private static void swapValues(int a[], int pos1, int pos2) {
-    int temp = 0;
-    temp = a[pos1];
-    a[pos1] = a[pos2];
-    a[pos2] = temp;
+    if (a[pos1] != a[pos2]) {
+      int temp = 0;
+      temp = a[pos1];
+      a[pos1] = a[pos2];
+      a[pos2] = temp;
+    }
   }
 }
